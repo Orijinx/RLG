@@ -1254,6 +1254,9 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .subhead--dark {
     color: #000000;
 }
+.subhead--red {
+    color: #b40000;
+}
 
 
 /* ------------------------------------------------------------------- 
@@ -1945,6 +1948,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 
 .home-social span {
     color: #39b54a;
+    /* color: #a52920; */
     right: 4.5rem;
     font-size: 1.3rem;
     opacity: 0;
@@ -2200,8 +2204,10 @@ html.no-csstransitions .home-content__main {
 .s-about {
     padding-top: 16.2rem;
     padding-bottom: 9rem;
-    background-color: #39b54a;
-    color: #010507;
+    /* background-color: #39b54a; */
+    background-color: #000000;
+    /* color: #010507; */
+    color: #ffffff;
     position: relative;
 }
 
@@ -2933,7 +2939,7 @@ html.no-csstransitions .home-content__main {
  * ------------------------------------------------------------------- */
 .s-contact {
     background-color: #151515;
-    background-image: url("../images/contact-bg.jpg");
+    background-image: url("../images/red_contact.jpg");
     background-repeat: no-repeat;
     background-position: center, center;
     padding-top: 15rem;

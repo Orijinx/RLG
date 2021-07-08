@@ -365,7 +365,7 @@
                     error: function() {
     
                         sLoader.slideUp("slow"); 
-                        $('.message-warning').html("Something went wrong. Please try again.");
+                        $('.message-warning').html("Что-то пошло не так. Повторите попытку.");
                         $('.message-warning').slideDown("slow");
     
                     }

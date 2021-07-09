@@ -44,7 +44,7 @@
 
         {{-- <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="{{ asset('images/logo.png') }}" alt="Homepage">
+                <img src="{{ asset('images/logo.png') }}" alt="Dashboardpage">
             </a>
         </div> --}}
 
@@ -56,7 +56,7 @@
                 <h3>Navigation</h3>
 
                 <ul class="header-nav__list">
-                    <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
+                    <li class="current"><a class="smoothscroll" href="#home" title="home">Dashboard</a></li>
                     <li><a class="smoothscroll" href="#about" title="about">About</a></li>
                     <li><a class="smoothscroll" href="#services" title="services">Services</a></li>
                     <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
@@ -114,7 +114,7 @@
 
                 <h1>
                     Здесь происходит что-то странное... <br>
-                    Повсюда случайным образом появлятся багровый туман, <br>
+                    Повсюду случайным образом появлятся багровый туман, <br>
                     А люди поговаривают о неописуемых ночных тварях... <br>
                     Готовы ли вы раскрыть тайны этого города?
 

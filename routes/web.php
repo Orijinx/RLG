@@ -25,7 +25,7 @@ require __DIR__.'/auth.php';
 
 Route::prefix('game')->group(function () {
     Route::get('/', function () {
-        return view('welcome');
+        return view('game.index');
     });
 });
 

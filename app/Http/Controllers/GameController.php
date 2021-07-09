@@ -9,9 +9,9 @@ use App\Mail\GameRequest;
 class GameController extends Controller
 {
     //
-    public function SendMail()
+    public function SendMail(Request $req)
     {
-        Mail::to('vladonnx@mail.ru')->send(new GameRequest);
+        Mail::to('vladonnx@mail.ru')->send(new GameRequest($req->name,$req->email,$req->sub,$req->message));
         return back();
     }
 }

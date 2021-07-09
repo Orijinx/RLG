@@ -11,14 +11,22 @@ class GameRequest extends Mailable
 {
     use Queueable, SerializesModels;
 
+    protected $name;
+    protected $email;
+    protected $subjects;
+    protected $message;
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($name,$email,$subject,$message)
     {
         //
+        $this->name = $name ?? "vlad";
+        $this->email = $email ?? "vladonnx@mail.ru";
+        $this->subjects = $subject ?? "Пошел на хуй";
+        $this->message = $message ?? "Зачем она берет мужские письки в рот?";
     }
 
     /**
@@ -29,6 +37,6 @@ class GameRequest extends Mailable
     public function build()
     {
         return $this->from('kalugakvests@mail.ru')
-        ->view('mail.request');
+        ->view('mail.request')->with(['name'=>$this->name,'email'=>$this->email,'sub'=>$this->subjects,'message'=>$this->message]);
     }
 }

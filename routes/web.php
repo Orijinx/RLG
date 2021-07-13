@@ -30,6 +30,13 @@ Route::prefix('game')->group(function () {
 });
 
 
+Route::prefix('admin')->group(function () {
+    Route::middleware(\App\Http\Middleware\AdminMW::class)->group(function(){
+        Route::get('/', [App\Http\Controllers\AdminController::class,"MainView"]);
+        Route::post('/adduser',[App\Http\Controllers\AdminController::class,'AddUser']);
+    });
+});
+
 Route::prefix('mail')->group(function () {
     Route::get('/send', [\App\Http\Controllers\GameController::class,"SendMail"]);
 });
